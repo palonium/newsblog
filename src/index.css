@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1202px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.img-wrapper {
+  aspect-ratio: 1/0.7;
+}
+.nav-btn {
+  @apply px-6 py-3 border-inherit rounded-lg text-white;
+}
+.nav-link {
+  @apply text-white py-8 hover:text-amber-500 transition ease-in-out;
+}
+.loading-spinner {
+  @apply inline-block h-8 w-8 animate-spin self-center rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite];
+}
+.form-title-input {
+  @apply w-full px-4 py-2 text-base border border-gray-300 rounded outline-none focus:ring-blue-500 focus:border-blue-500 focus:ring-1;
+}
+.delete-photo-btn {
+  @apply bg-red-500 hover:bg-red-800 mb-8 py-1 w-1/5 px-3 border-none rounded-md transition ease-in-out;
+}
+.form-submit-btn {
+  @apply bg-[#1a605b] hover:bg-[#019191] py-4 w-full border-none rounded-md transition ease-in-out;
+}
+
+
